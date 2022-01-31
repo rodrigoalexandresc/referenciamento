@@ -1,0 +1,11 @@
+version: "3.4"
+
+services:  
+  refssdb:
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: "Postgres2022!"
+    ports:
+      - "15432:5432"
+    volumes:
+      - C:\refss\postgres\data:/var/lib/postgresql/data
